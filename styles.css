@@ -109,7 +109,7 @@ nav ul li a {
     }
 
     .logo-40 {
-        width: 200px; /* Ajustamos el logo */
+        width: 300px; /* Ajustamos el logo */
     }
 }
 
@@ -140,6 +140,6 @@ nav ul li a {
     }
 
     .logo-40 {
-        width: 150px; /* Reducimos más el tamaño del logo */
+        width: 300px; /* Reducimos más el tamaño del logo */
     }
 }
