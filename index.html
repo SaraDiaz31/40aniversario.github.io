@@ -39,38 +39,10 @@
     </header>
 
     <div class="countdown-container">
-        <p id="countdown">00:00:00</p>
+        <p id="countdown">Cargando...</p>
     </div>
 
-    <script>
-        // Script de cuenta regresiva
-        function startCountdown(duration) {
-            var countdownElement = document.getElementById("countdown");
-            var totalSeconds = duration;
-
-            setInterval(function() {
-                if (totalSeconds >= 0) {
-                    var hours = Math.floor(totalSeconds / 3600);
-                    var minutes = Math.floor((totalSeconds % 3600) / 60);
-                    var seconds = totalSeconds % 60;
-
-                    countdownElement.innerHTML = 
-                        (days < 10 ? "0" + days : days) + ":" +
-                        (hours < 10 ? "0" + hours : hours) + ":" + 
-                        (minutes < 10 ? "0" + minutes : minutes) + ":" + 
-                        (seconds < 10 ? "0" + seconds : seconds);
-                    
-                    totalSeconds--;
-                }
-            }, 1000);
-        }
-
-        // Iniciar cuenta regresiva (por ejemplo, 1 hora = 3600 segundos)
-        window.onload = function() {
-            startCountdown(3600); // Cambia el número a la duración deseada en segundos
-        };
-    </script>
-
+    <script src="countdown.js"></script>
 
 </body>
 </html>
