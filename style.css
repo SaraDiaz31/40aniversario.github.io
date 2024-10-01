@@ -96,16 +96,25 @@
     background-color: black; 
     color: white; 
     text-align: center; 
-    padding: 20px 0; 
+    padding: 5rem 5%; 
     z-index: 1; 
     position: relative; 
     
 }
 
 #countdown {
-    font-size: 48px; /* Tamaño de fuente grande */
-    font-weight: bold; /* Texto en negrita */
+    font-size: 5rem; 
+    font-weight: bold; 
 }
+
+
+
+
+
+
+
+
+
 /*************** media query ********************/
 
 @media (max-width: 992px) {
@@ -193,5 +202,19 @@
         -o-transform: translateX(0);
         transition-delay: calc(.15s * var(--i));
         opacity: 1;
+    }
+
+    .image-overlay a{  
+        font-size: 1rem;
+        padding: 0.5rem 10%;
+     
+    }
+
+    .logo-40 {
+        width: 400r;
+    }
+
+    #countdown {
+        font-size: 3rem; 
     }
 }
