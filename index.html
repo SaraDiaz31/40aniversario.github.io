@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Favicon40A2.ico" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Altar de Dios</title>
+</head>
+
+<body>
+    
+    <div class="video-container" id="inicio">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="0930r.mp4" type="video/mp4">
+        </video>
+        <div class="image-overlay">
+            <img src="Logo40.png" class="logo-40">
+            <a href="#acerca">Ver más</a>
+        </div>
+    </div>
+
+    <header class="header" >        
+        <img src="LogoLetra40B.png" class="logo">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#inicio" style="--i:0;">Inicio</a>
+            <a href="#acerca" style="--i:1;">Acerca de</a>
+            <a href="#ganadores" style="--i:3;">Ganadores</a>
+            <a href="#invitados" style="--i:2;">Invitados</a>
+            <a href="#contactanos" style="--i:4;">Contactanos</a>
+        </nav>  
+    </header>
+
+    <!-- Cuenta regresiva -->
+    <div class="countdown-container" id="acerca">
+        <h1>¡Falta Poco!</h1>
+        <div id="countdown" class="countdown"></div>
+            <ul>
+                <li><span id="dias">00</span>dias</li>
+                <li><span id="horas">00</span>horas</li>
+                <li class="separador">:</li>
+                <li><span id="minutos">00</span>minutos</li>
+                <li class="separador">:</li>
+                <li><span id="segundos">00 </span>segundos</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <!-- Acerca de -->
+    <div class="event-description">
+        <h2>Detalles del Evento</h2>
+        <p>Únete a nosotros en la celebración del 40 aniversario de la iglesia Altar de Dios Internacional, un evento especial donde conmemoraremos cuatro décadas de fe, servicio y amor. Este momento histórico estará lleno de adoración y alabanza, mientras recordamos lo que Dios ha hecho y continuamos creyendo en lo que seguirá haciendo a través de nosotros.</p><br>
+        <div class="details-container">
+            <div class="detail">
+                <i class='bx bxs-calendar'></i>
+                <h3>Fecha</h3>
+                <p>02 de Noviembre, 2024</p>
+            </div>
+            <div class="detail">
+                <i class='bx bxs-time'></i>
+                <h3>Hora</h3>
+                <p>1:00 PM</p>
+            </div>
+            <div class="detail">
+                <i class='bx bxs-map'></i>
+                <h3>Lugar</h3>
+                <p>Gimnasio del INFRAMEN</p>
+            </div>
+        </div>
+    </div>    
+    
+    <div class="mapa-container">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124032.78690671391!2d-89.20521219248751!3d13.716960449968635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330ba6218c2ed%3A0x3dfc6e1ea29d8168!2sGimnasio%20del%20INFRAMEN!5e0!3m2!1ses-419!2ssv!4v1728267187512!5m2!1ses-419!2ssv" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+
+    <!-- Ganadores -->
+    <div class="winners-section" id="ganadores">
+        <h2>Ganadores en Redes Sociales</h2>
+        <div class="winners-container">
+            <div class="winner">
+                <img src="4.jpg" alt="Ganador 1">
+                <h3>Proximamente ...</h3>
+                <p>Pendiente de nuestras dinámicas en redes sociales.</p>
+            </div>
+             <!--<div class="winner">
+                <img src="2.jpg" alt="Ganador 2">
+                <h3>Nombre del Ganador 2</h3>
+                <p>Descripción breve del ganador y su participación en redes sociales.</p>
+            </div>
+            <div class="winner">
+                <img src="3.jpg" alt="Ganador 2">
+                <h3>Nombre del Ganador 2</h3>
+                <p>Descripción breve del ganador y su participación en redes sociales.</p>
+            </div>-->
+        </div>
+    </div>
+
+    <hr>
+    <!-- Playlist -->
+    <div class="playlist-container" id="invitados">
+        <h2>Invitados</h2>
+
+        <!-- Spotify  -->
+        <div class="spotify-playlist">
+            <h3>Gloria de Revelo</h3>
+            <!--<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2FL01e?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6Z3L3Kgzzm8DlkqGKK41fQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <!-- YouTube  -->
+        <div class="youtube-playlist">
+            <h3>Playlist de YouTube</h3>
+            <!--<iframe width="100%" height="315" src="https://www.youtube.com/embed/wYqJ4hg7xbQ?si=kymVgJU5kjLAAard" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/t1IhvpFc6G0?si=JezI_ZMpu1Z0yMd2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+     <!-- Contactos -->
+     <div class="contact-container" id="contactanos">
+        <h2>Contáctanos</h2>
+        <p>Si tienes alguna pregunta o deseas más información, no dudes en contactarnos a través de nuestras redes sociales o envíanos un correo  <a href="40aniversariomarketing@gmail.com">40aniversariomarketing@gmail.com</a> </p>
+        <ul>
+            <li><i class='bx bxl-facebook-circle'></i> <a href="" target="_blank">Facebook</a></li>
+            <li><i class='bx bxl-instagram'></i> <a href="" target="_blank">Facebook</a> </li>
+            <li><i class='bx bxl-tiktok'></i> <a href="" target="_blank">Facebook</a></li>
+            <li><i class='bx bxl-youtube'></i> <a href="https://www.youtube.com/@iglesiaaltardedios-santaun8172" target="_blank">Iglesia Altar de Dios - Santa Unción</a> </li>
+        </ul>
+    </div>
+
+</body>
+</html>
